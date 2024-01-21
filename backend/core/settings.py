@@ -179,11 +179,11 @@ SPECTACULAR_SETTINGS = {
 }
 
 SIMPLE_JWT = {
-    'ALGORITHM': 'HS254',
+    'ALGORITHM': 'HS256',
     'AUTH_HEADER_TYPES': ('Bearer', ),
     'USER_ID_FIELD': 'id',
     'USER_ID_CLAIM': 'user_id',
-    # 'AUTH_TOKEN_CLASS': 'rest_framework_simplejwt.token.AccessToken',
+    # 'AUTH_TOKEN_CLASS': ('rest_framework_simplejwt.token.AccessToken'),
     'TOKEN_TYPE_CLAIM': 'token_type',
     'JTI_CLAIM': 'jti',
     'TOKEN_USER_CLASS': 'rest_framework.simplejwt.models.TokenUser'
